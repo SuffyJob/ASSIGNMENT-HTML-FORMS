@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <link href="css.style.css" rel="stylesheet" type="text/css"/>
+    <style>
+        fieldset {
+            margin-bottom: 10px;
+        }
+        label,
+        textarea,
+        select,
+        input[type="text"],
+        input[type="file"], {
+            margin-bottom: 10px
+        }
+        /* Additional css for spacing between checkbox and laabel */
+        input[type="checkbox"] {
+            margin-right: 5px; /* Adjust space*/
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post"></form>
+    <fieldset>
+        <legend> Your address</legend>
+        <div>
+            <label for="First name">First name</label>
+            <input type="first nmae"placeholder></br>
+        </div>
+        <div>
+        <label for="last name">Last name</label>
+            <input type="last name"placeholder></br>
+        </div>
+        <div>
+            <label for="street">Street</label>
+            <input type="street"placeholder></br>
+        </div>
+    <div>
+        <label for="city">City</label>
+            <input type="city"placeholder></br>
+    </div>
+    </fieldset>
+
+    <fieldset>
+        <legend> Additional Details </legend>
+        <div>
+            <label for="biography">Biography</label>
+            <input type="biography" placeholder></br>
+        </div>
+    <div>
+        <label for="image">Image</label>
+            <input type="file"> </br>
+    </div>
+    <div>
+        <label for="age group">Age group</label>
+        <input type="number" placeholder="0 to 9 years">
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend> Interests </legend>
+        <div>
+            <label for="hobbies">Hobbies</label>
+            <textarea id="hobbies" name="hobbies" rows="4" cols="10" required>Playing 
+                Dancing
+                Gardening 
+                Watching Movies
+            </textarea>
+        </div>
+        <div>
+            <label for="car">Favorite car?</label>
+            <input type="select" value="Volvo" value="Sienna">
+            
+        </div>
+        <div>
+        <label for="favorite public transport">Favorite public transport?</label>
+        <select id="favorite public transport"name="favorite public transport" size="4">
+        <optgroup label="Ground">
+        <option value="train">Train</option>
+        <option value="bus">Bus</option>
+        </optgroup>
+        <optgroup label="Water"></optgroup>
+    </div>
+            
+            
+    </fieldset>  
+
+</body>
+</html>
